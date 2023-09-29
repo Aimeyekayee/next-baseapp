@@ -1,5 +1,11 @@
 {
-    "Index": {
+    "nav": {
         "tool": "Tool History Record"
+    },
+    "main": {
+        "ch_st": "Check Status",
+        "rec": "Record",
+        "dashboard": "Dashboard",
+        "cal": "Calendar View"
     }
 }

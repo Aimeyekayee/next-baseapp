@@ -13,11 +13,13 @@
     "@ant-design/cssinjs": "^1.17.0",
     "antd": "^5.9.3",
     "axios": "^1.5.1",
+    "clsx": "^2.0.0",
     "dayjs": "^1.11.10",
     "next": "latest",
     "next-intl": "^2.20.2",
     "react": "latest",
     "react-dom": "latest",
+    "react-full-screen": "^1.1.1",
     "react-icons": "^4.11.0",
     "sass": "^1.68.0",
     "zustand": "^4.4.1"
