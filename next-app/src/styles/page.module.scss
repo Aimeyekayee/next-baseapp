@@ -1,0 +1,27 @@
+.main {
+  align-items: center;
+  flex: 1;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container{
+  min-width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.link{
+  text-decoration: none;
+
+}
+
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+}
