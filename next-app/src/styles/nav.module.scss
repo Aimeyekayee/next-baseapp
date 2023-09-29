@@ -2,3 +2,16 @@
     border: 1px solid red;
     
 }
+
+.mode{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height:2rem;
+    width:2rem;
+}
+.mode:hover{
+    background: #fafafa;
+}
