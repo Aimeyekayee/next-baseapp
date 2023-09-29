@@ -61,7 +61,7 @@ const Navigation = () => {
         style={{
           display: "flex",
           justifyContent: "space-between",
-          padding: "2rem",
+          padding: "0.8rem 2rem 0.8rem 2rem",
           background: toggleMode === "light" ? colorBgContainer : "#0d1117",
         }}
       >
@@ -76,22 +76,22 @@ const Navigation = () => {
           <Image src={denso} alt="denso" priority width={100} />
           <Typography>Tool life History</Typography>
         </div>
-        <div>
+        <div style={{display:"flex"}}>
           <div onClick={changeTheme} className={styles.mode}>
             {toggleMode === "light" ? (
-              <BiSun color="#8c8c8c" />
+              <BiSun color="#8c8c8c"size={25} />
             ) : (
-              <BsMoonStars color="#8c8c8c" />
+              <BsMoonStars color="white" size={25}/>
             )}
           </div>
           <Dropdown menu={{ items }} trigger={["click"]}>
             <a onClick={(e) => e.preventDefault()}>
-              <Space>
-                <div style={{display:"flex"}}>
-                  <Image src={man} alt="man" priority width={40}/>
-                  <div style={{display:"flex",flexDirection:"column"}}>
-                    <Typography>Khunakon</Typography>
-                    <Typography>admin</Typography>
+              <Space style={{display:"flex",gap:"0.8rem"}}>
+                <div style={{display:"flex",gap:"1rem"}}>
+                  <Image src={man} alt="man" priority width={35}/>
+                  <div style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
+                    <Typography style={{lineHeight:"1"}}>Khunakon</Typography>
+                    <Typography style={{lineHeight:"1"}}>admin</Typography>
                   </div>
                 </div>
                 <AiOutlineCaretDown />
