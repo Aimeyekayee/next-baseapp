@@ -5,7 +5,7 @@ type dictType = Record<string, any>;
 
 const dictionaries = {
   en: () =>
-    import("@/i18n/en.json").then(
+    import("@/i18n/en.json").then( 
       (module) => module.default as dictType
     ),
   th: () =>

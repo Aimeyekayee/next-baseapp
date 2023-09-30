@@ -1,8 +1,24 @@
 {
     "nav": {
         "tool": "Tool History Record",
-        "life":"",
-        "admin":"admin"
+        "life": "",
+        "admin": "admin"
+    },
+    "router": {
+        "links": {
+            "status": {
+                "href": "/checkstatus"
+            },
+            "record": {
+                "href": "/record"
+            },
+            "dashboard": {
+                "href": "/dashboared"
+            },
+            "calendar": {
+                "href": "/calendar"
+            }
+        }
     },
     "main": {
         "ch_st": "Check Status",
@@ -13,5 +29,5 @@
     "LocaleSwitcher": {
         "label": "Change language",
         "locale": "{locale, select, en {English} other {ไทย}}"
-      }
+    }
 }

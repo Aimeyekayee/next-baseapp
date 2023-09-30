@@ -1,8 +1,24 @@
 {
     "nav": {
         "tool": "ประวัติการบันทึก",
-        "life":"ทูลไลฟ์",
-        "admin":"แอดมิน"
+        "life": "ทูลไลฟ์",
+        "admin": "แอดมิน"
+    },
+    "router": {
+        "links": {
+            "status": {
+                "href": "/checkstatus"
+            },
+            "record": {
+                "href": "/record"
+            },
+            "dashboard": {
+                "href": "/dashboared"
+            },
+            "calendar": {
+                "href": "/calendar"
+            }
+        }
     },
     "main": {
         "ch_st": "ตรวจสอบสถานะ",
@@ -13,5 +29,5 @@
     "LocaleSwitcher": {
         "label": "Change language",
         "locale": "{locale, select, en {English} other {ไทย}}"
-      }
+    }
 }

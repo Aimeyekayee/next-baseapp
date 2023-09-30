@@ -6,6 +6,7 @@ import type { ThemeConfig } from "antd";
 import React from "react";
 import { ModeStore } from "@/store/mode.store";
 import { useTranslations } from "next-intl";
+import PageLink from "@/components/pageLink";
 
 const { Content } = Layout;
 const Home = () => {
@@ -31,18 +32,18 @@ const Home = () => {
         }}
       >
         <Content className={styles.container}>
-          <Link href="/checkstatus" className={styles.link}>
+          <PageLink href="/checkstatus" className={styles.link}>
             <Typography className={styles.typo}>{t("ch_st")}</Typography>
-          </Link>
-          <Link href="/record" className={styles.link}>
+          </PageLink>
+          <PageLink href="/record" className={styles.link}>
             <Typography className={styles.typo}>{t("rec")}</Typography>
-          </Link>
-          <Link href="/dashboard" className={styles.link}>
+          </PageLink>
+          <PageLink href="/dashboard" className={styles.link}>
             <Typography className={styles.typo}>{t("dashboard")}</Typography>
-          </Link>
-          <Link href="/calendar" className={styles.link}>
+          </PageLink>
+          <PageLink href="/calendar" className={styles.link}>
             <Typography className={styles.typo}>{t("cal")}</Typography>
-          </Link>
+          </PageLink>
         </Content>
       </Layout>
     </ConfigProvider>

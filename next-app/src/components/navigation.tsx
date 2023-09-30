@@ -20,7 +20,6 @@ import { MdFullscreen, MdFullscreenExit } from "react-icons/md";
 import { AiOutlineCaretDown } from "react-icons/ai";
 import LocaleSwitcher from "./locale-switcher";
 import { useTranslations } from "next-intl";
-import { FullScreen, useFullScreenHandle } from "react-full-screen";
 
 const items: MenuProps["items"] = [
   {
@@ -43,7 +42,6 @@ const Navigation = () => {
   const toggleMode = ModeStore((state) => state.toggleMode);
   const setToggleMode = ModeStore((state) => state.setToggleMode);
   const t = useTranslations("nav");
-  const handle = useFullScreenHandle();
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -55,7 +53,7 @@ const Navigation = () => {
   const config: ThemeConfig = {
     token: {
       colorPrimary: "#1890ff",
-      fontFamily:"Noto Sans Thai"
+      fontFamily: "Noto Sans Thai",
     },
     algorithm:
       toggleMode === "light" ? theme.defaultAlgorithm : theme.darkAlgorithm,
@@ -114,7 +112,10 @@ const Navigation = () => {
             </div>
             <LocaleSwitcher />
           </div>
-          <div style={{padding:"0.5rem",borderRadius:"0.5rem"}} className={styles.dropdown}>
+          <div
+            style={{ padding: "0.5rem", borderRadius: "0.5rem" }}
+            className={styles.dropdown}
+          >
             <Dropdown menu={{ items }} trigger={["click"]}>
               <a onClick={(e) => e.preventDefault()}>
                 <Space
