@@ -1,11 +1,17 @@
 {
     "nav": {
-        "tool": "Tool History Record"
+        "tool": "Tool History Record",
+        "life":"",
+        "admin":"admin"
     },
     "main": {
         "ch_st": "Check Status",
         "rec": "Record",
         "dashboard": "Dashboard",
         "cal": "Calendar View"
-    }
+    },
+    "LocaleSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, en {English} other {ไทย}}"
+      }
 }

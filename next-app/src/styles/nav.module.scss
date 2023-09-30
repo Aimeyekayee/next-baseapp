@@ -7,7 +7,20 @@
     border-radius: 50%;
     height:2.2rem;
     width:2.2rem;
+    transition: 0.4s;
 }
 .mode:hover{
-    background: #fafafa;
+    background: rgba(140, 140, 140, 0.3)
+}
+
+.span{
+    color: #DC0032 !important;
+}
+
+.dropdown{
+    transition: 0.4s;
+}
+
+.dropdown:hover{
+    background: rgba(140, 140, 140, 0.3)
 }

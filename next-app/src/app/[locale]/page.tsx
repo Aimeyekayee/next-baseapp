@@ -3,7 +3,7 @@ import styles from "../../styles/page.module.scss";
 import Link from "next/link";
 import { Button, ConfigProvider, Layout, Typography, theme } from "antd";
 import type { ThemeConfig } from "antd";
-import React from "react"
+import React from "react";
 import { ModeStore } from "@/store/mode.store";
 import { useTranslations } from "next-intl";
 
@@ -14,6 +14,7 @@ const Home = () => {
   const config: ThemeConfig = {
     token: {
       colorPrimary: "#1890ff",
+      fontFamily: "Noto Sans Thai",
     },
     algorithm:
       toggleMode === "light" ? theme.defaultAlgorithm : theme.darkAlgorithm,
@@ -23,21 +24,25 @@ const Home = () => {
   } = theme.useToken();
   return (
     <ConfigProvider theme={config}>
-      <Layout className={styles.main} style={{background:toggleMode === "light" ? colorBgContainer : "#0d1117"}}>
+      <Layout
+        className={styles.main}
+        style={{
+          background: toggleMode === "light" ? colorBgContainer : "#0d1117",
+        }}
+      >
         <Content className={styles.container}>
           <Link href="/checkstatus" className={styles.link}>
-            <Typography style={{fontSize:"2rem"}}>{t('ch_st')}</Typography>
+            <Typography className={styles.typo}>{t("ch_st")}</Typography>
           </Link>
           <Link href="/record" className={styles.link}>
-            <Typography style={{fontSize:"2rem"}}>{t('rec')}</Typography>
+            <Typography className={styles.typo}>{t("rec")}</Typography>
           </Link>
           <Link href="/dashboard" className={styles.link}>
-            <Typography style={{fontSize:"2rem"}}>{t('dashboard')}</Typography>
+            <Typography className={styles.typo}>{t("dashboard")}</Typography>
           </Link>
           <Link href="/calendar" className={styles.link}>
-            <Typography style={{fontSize:"2rem"}}>{t('cal')}</Typography>
+            <Typography className={styles.typo}>{t("cal")}</Typography>
           </Link>
-          
         </Content>
       </Layout>
     </ConfigProvider>

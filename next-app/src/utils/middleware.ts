@@ -11,7 +11,7 @@ export function middleware(request: NextRequest) {
   // redirect if locale not match
   if (pathnameIsMissingLocale) {
     // default locale
-    let locale = "en";
+    let locale = "th";
 
     // locale cookie
     if (request.cookies.has("locale")) {

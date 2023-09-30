@@ -1,11 +1,17 @@
 {
     "nav": {
-        "tool": "ประวัติการบันทึกทูลไลฟ์"
+        "tool": "ประวัติการบันทึก",
+        "life":"ทูลไลฟ์",
+        "admin":"แอดมิน"
     },
     "main": {
         "ch_st": "ตรวจสอบสถานะ",
         "rec": "บันทึกรายงาน",
         "dashboard": "แดชบอร์ด",
         "cal": "มุมมองปฏิทิน"
-    }
+    },
+    "LocaleSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, en {English} other {ไทย}}"
+      }
 }

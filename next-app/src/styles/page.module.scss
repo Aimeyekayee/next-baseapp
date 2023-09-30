@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500&display=swap');
 .typo{
-  font-size: 5rem;
-  border: 1px solid red;
+  font-size: 2rem !important;
+  transition: 0.3s !important;
+  font-weight: 500;
+}
+
+.typo:hover{
+  font-size: 2.25rem !important;
 }
 
 .container{
